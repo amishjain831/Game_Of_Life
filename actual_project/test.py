@@ -103,7 +103,7 @@ def game_start(option):
             newWorld[x, y] = life_step(x, y, world)
 
             if newWorld[x, y] == 1:
-                pygame.draw.rect(screen, cellColor, (cellSize * (x - 1), cellSize * (y - 1), cellSize, cellSize), 2)
+                pygame.draw.rect(screen, cellColor, (cellSize * (x), cellSize * (y), cellSize, cellSize), 2)
 
         world = newWorld
         pygame.display.update()
