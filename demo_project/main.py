@@ -1,5 +1,5 @@
 from tkinter import *
-from p import GameOfLife
+from game import GameOfLife
 
 
 
